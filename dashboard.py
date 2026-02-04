@@ -91,4 +91,3 @@ Student_ID,Name,Attendance,Average_Grade
     st.success(" Full analysis and PDF report generated successfully!")
 else:
     st.info("Please upload a CSV file to begin analysis.")
-
