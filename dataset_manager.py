@@ -1,5 +1,5 @@
 import pandas as pd
-from .student import Student
+from student import Student
 
 class DatasetManager:
     def __init__(self, file_path):
@@ -31,3 +31,4 @@ class DatasetManager:
             raise ValueError(f"Error parsing CSV file: {str(e)}")
         except Exception as e:
             raise ValueError(f"Error loading data: {str(e)}")
+
