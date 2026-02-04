@@ -3,11 +3,11 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import os
 
-from src.dataset_manager import DatasetManager
-from src.analzer import Analyzer
-from src.visualizer import Visualizer
-from src.report_generator import ReportGenerator
-from src.pdf_report_generator import PDFReportGenerator
+from dataset_manager import DatasetManager
+from analzer import Analyzer
+from visualizer import Visualizer
+from report_generator import ReportGenerator
+from pdf_report_generator import PDFReportGenerator
 
 # Streamlit page setup
 st.set_page_config(page_title="Student Attendance Dashboard", layout="wide")
@@ -91,3 +91,4 @@ Student_ID,Name,Attendance,Average_Grade
     st.success(" Full analysis and PDF report generated successfully!")
 else:
     st.info("Please upload a CSV file to begin analysis.")
+
